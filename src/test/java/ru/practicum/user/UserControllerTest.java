@@ -63,6 +63,7 @@ class UserControllerTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
+                //.andExpect(status().isInternalServerError())
                 .andExpect(jsonPath("$.id", is(userDto.getId()), Long.class))
                 .andExpect(jsonPath("$.firstName", is(userDto.getFirstName())))
                 .andExpect(jsonPath("$.lastName", is(userDto.getLastName())))

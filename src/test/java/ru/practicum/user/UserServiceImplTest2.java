@@ -21,7 +21,7 @@ import static org.hamcrest.Matchers.*;
 @RequiredArgsConstructor(onConstructor_ = @Autowired)
 @TestPropertySource(properties = { "db.name=test2"})
 @SpringJUnitConfig( { PersistenceConfig.class, UserServiceImpl.class})
-class UserServiceImplTest {
+class UserServiceImplTest2 {
 
     private final EntityManager em;
     private final UserService service;
